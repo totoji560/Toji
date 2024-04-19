@@ -1,24 +1,38 @@
-import fetch from 'node-fetch'
-import { JSDOM } from 'jsdom'
-let handler = async (m, { conn, text }) => {
-conn.reply(m.chat, Object.entries(await stylizeText(text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text)).map(([name, value]) => `*${name}*\n${value}`).join`\n\n`, m)
+function handler(m, { text }) {
+  let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
+  m.reply(teks.replace(/[a-z]/gi, v => {
+      return { 
+          'a': '𝐴',
+          'b': '𝐵',
+          'c': '𝐶',
+          'd': '𝐷',
+          'e': '𝐸',
+          'f': '𝐹',
+          'g': '𝐺',
+          'h': '𝐻',
+          'i': '𝐼',
+          'j': '𝐽',
+          'k': '𝐾',
+          'l': '𝐿',
+          'm': '𝑀',
+          'n': '𝑁',
+          'o': '𝛩',
+          'p': '𝑃',
+          'q': '𝑄',
+          'r': '𝑅',
+          's': '𝑺',
+          't': '𝑇',
+          'u': '𝑈',
+          'v': '𝑉',
+          'w': '𝑊',
+          'x': '𝑋',
+          'y': '𝑌',
+          'z': '𝑍', 
+      }[v.toLowerCase()] || v
+  }))
 }
-handler.help = ['style'].map(v => v + '<text>')
-handler.tags = ['tools']
-handler.command = ['styletext','خط']
-handler.exp = 0
-export default handler
+handler.help = ['V E N O M']
+handler.tags = ['V E N O M']
+handler.command =  /^(خط|كيب)$/i
 
-async function stylizeText(text) {
-let res = await fetch('http://qaz.wtf/u/convert.cgi?text=' + encodeURIComponent(text))
-let html = await res.text()
-let dom = new JSDOM(html)
-let table = dom.window.document.querySelector('table').children[0].children
-let obj = {}
-for (let tr of table) {
-let name = tr.querySelector('.aname').innerHTML
-let content = tr.children[1].textContent.replace(/^\n/, '').replace(/\n$/, '')
-obj[name + (obj[name] ? 'Reversed' : '')] = content
-}
-return obj
-}
+export default handler
