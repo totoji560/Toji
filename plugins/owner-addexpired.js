@@ -14,7 +14,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['expired <أيام>']
 handler.tags = ['owner']
-handler.command = /^(expired|addexpired)$/i
+handler.command = /^(ضيف_بريميام|بريميام)$/i
 handler.owner = true
 
 export default handler
