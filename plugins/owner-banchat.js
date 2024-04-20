@@ -7,7 +7,7 @@ let handler = async (m, { conn, isOwner, isAdmin, isROwner }) => {
 }
 handler.help = ['banchat']
 handler.tags = ['owner']
-handler.command = ['banchat', 'chatoff']
+handler.command = ['banchat', 'بان_شات']
 
 handler.group = true
 handler.owner = true
