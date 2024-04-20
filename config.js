@@ -23,7 +23,7 @@ global.ownername = 'Akira'
 global.botname = 'نــيــزوكــو بــوت'
 global.premium = 'false'
 global.packname = 'نــيــزوكــو بــوت'
-global.author = 'نــيــزوكــو >> اكـــيــــرا'
+global.author = '201020639057 >> اكـــيــــرا'
 
 
 global.wait = '*[■■■■■■■■■□] 90%*'
