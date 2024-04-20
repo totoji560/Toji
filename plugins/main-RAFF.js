@@ -1,16 +1,14 @@
 let handler = async m => m.reply(`
 
-≡  *ℝ𝔸ℙℍ𝔸𝔼𝕃 ┃ ＢＯＴ ²⁰²³*
+≡  *𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇*
 
 _GROUP:_
 ─────────────
 ▢ انضم إلى مجموعة البوت *العامة والدعم*
-https://chat.whatsapp.com/Har7Z8RPqDO0jZP2FeRApN
+https://chat.whatsapp.com/Har7Z8RPqDO02FeRApN
 
 ─────────────
 
-▢ *YouTube*
-• https://www.youtube.com/@9TL
 
 
 `.trim())
