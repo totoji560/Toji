@@ -40,7 +40,7 @@ let handler = async (m, { conn, text }) => {
   
   handler.help = ['reset <54xxx>']
   handler.tags = ['owner']
-  handler.command = ['resetuser']
+  handler.command = ['إعادة']
 
   handler.owner = true
   
