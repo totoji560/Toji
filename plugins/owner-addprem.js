@@ -21,7 +21,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['addprem <@tag>']
 handler.tags = ['owner']
-handler.command = ['addprem', 'addpremium']
+handler.command = ['بريميام', 'ضيف_بريميام']
 
 handler.group = true
 handler.owner = true
