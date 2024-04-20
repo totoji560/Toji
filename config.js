@@ -3,11 +3,11 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['96894116692', 'dark man', true],
+  ['201020639057', '𝐴 𝐾 𝐼 𝑅 𝐴', true],
 ] //Number of owners
 
-global.mods = ['96894116692','96898172380'] 
-global.prems = ['96894116692','96898172380']
+global.mods = ['201020639057','201020639057'] 
+global.prems = ['201020639057','201020639057']
 
 
 global.APIs = { // API Prefix
@@ -19,11 +19,11 @@ global.APIKeys = { // Apikey : 42x5rO7o \\
 }
 
 // Sticker WM
-global.ownername = 'dark man'
-global.botname = 'رافـاييـل بــوت'
+global.ownername = 'Akira'
+global.botname = 'نــيــزوكــو بــوت'
 global.premium = 'false'
-global.packname = 'رافـاييـل بــوت'
-global.author = 'Dev >> dark man'
+global.packname = 'نــيــزوكــو بــوت'
+global.author = 'نــيــزوكــو >> اكـــيــــرا'
 
 
 global.wait = '*[■■■■■■■■■□] 90%*'
