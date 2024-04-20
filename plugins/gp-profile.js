@@ -32,6 +32,6 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 }
 handler.help = ['perfil']
 handler.tags = ['group']
-handler.command = ['profile', 'perfil','عني','بروفايل'] 
+handler.command = ['profile', 'بروفايلي','عني','بروفايل'] 
 
 export default handler
