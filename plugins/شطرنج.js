@@ -119,7 +119,7 @@ const handler = async (m, { conn, args }) => {
     chessData.currentTurn = players[nextTurnIndex];
     const encodedFen = encodeURIComponent(chess.fen());
     const currentColor = chessData.currentTurn === gameData.white ? 'الابيض' : 'الاسود';
-    const turn = `『𝔐𝔦𝔨𝔲 𝔅𝔒𝔗』 *دور:* ${currentColor} @${chessData.currentTurn.split('@')[0]}\n\n${chess.getComment() || ''}`;
+    const turn = `『𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇』 *دور:* ${currentColor} @${chessData.currentTurn.split('@')[0]}\n\n${chess.getComment() || ''}`;
     const flipParam = senderId === gameData.black ? '' : '&flip=true';
     const flipParam2 = senderId === gameData.black ? '' : '-flip';
     const boardUrl = `https://www.chess.com/dynboard?fen=${encodedFen}&board=graffiti&piece=graffiti&size=3&coordinates=inside${flipParam}`;
