@@ -3,11 +3,11 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['201020639057', '201559321760', true],
+  ['201559321760', '201020639057', true],
 ] //Number of owners
 
-global.mods = ['201020639057','201559321760'] 
-global.prems = ['201020639057','201559321760']
+global.mods = ['201559321760','201020639057'] 
+global.prems = ['201559321760','201020639057']
 
 
 global.APIs = { // API Prefix
