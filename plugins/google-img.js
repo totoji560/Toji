@@ -1,16 +1,16 @@
-import { googleImage } from  '@bochilteam/scraper' 
-var handler = async (m, { conn, text, usedPrefix, command }) => {
-    if (!text) throw `للإستخدام*مثال*: ${usedPrefix}${command} نيزوكو`
-    const res = await googleImage(text)
-    let image = res.getRandom()
-    let link = image
-    conn.sendFile(m.chat, link,  'google.jpg' , `*𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇*
-🔎 النتيجة: *${text}*
-🌎 الصورة مأخوذة من جوجل
-`,m)
+import { googleImage } from '@bochilteam/scraper'
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+if (!text) throw `*متنساش ال انت عاوز تبحث عليه يحب , مثال : .صوره نيزوكو*`
+const res = await googleImage(text)
+let image = res.getRandom()
+let link = image
+conn.sendHydrated(m.chat, `🔎 *البحث:* ${text}
+🌎 *المصدر:* Google
+`, author, link, link, '🔗 اللينك', null, null, [
+['💫 التالي 💫', `/imagen ${text}`]
+], m)
 }
-handler.help = [ 'gimage' ]
-handler.tags = [ 'internet' ]
-handler.command = ['صوره','صورة']
-handler.rowner = true
+handler.help = ['gimage <query>', 'imagen <query>']
+handler.tags = ['internet', 'tools']
+handler.command = /^(صوره|image|بحث-صورة)$/i
 export default handler
