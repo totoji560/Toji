@@ -5,7 +5,7 @@ let handler = async m => m.reply(`
 _GROUP:_
 ─────────────
 ▢ انضم إلى مجموعة البوت *العامة والدعم*
-https://chat.whatsapp.com/Har7Z8RPqDO02FeRApN
+https://chat.whatsapp.com/BhcSprxT9A33LTMN1HZStO
 
 ─────────────
 
