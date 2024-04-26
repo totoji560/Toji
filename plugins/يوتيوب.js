@@ -1,32 +1,20 @@
-import yts from 'yt-search'
+import fs from 'fs'
 
-let handler = async (m, { conn, text }) => {
-  if (!text) throw '✳️ ما الذي تريد البحث عنه على يوتيوب؟'
+let handler = async (m, {conn, text }) => {
+  if (!text) throw '⚠️ *اكتب الامر ويلي تريد تبحث عنه في اليوتيوب*'
+  await conn.reply(m.chat, global.wait, m)
   let results = await yts(text)
   let tes = results.all
   let teks = results.all.map(v => {
     switch (v.type) {
-      case 'video':
-        return `
-▢ ${v.title}
-▢ *الرابط* : ${v.url}
-▢ *المدة* : ${v.timestamp}
-▢ *تم نشره* : ${v.ago}
-▢ *المشاهدات* : ${v.views}
-      `.trim()
-      case 'channel':
-        return `
-▢ *${v.name}* (${v.url})
-▢ ${v.subCountLabel} (${v.subCount}) اشتراك
-▢ ${v.videoCount} فيديو
-      `.trim()
-    }
-  }).filter(v => v).join('\n\n________________________\n\n')
+      case 'video': return `
+° *_${v.title}_*
+↳ 🫐 *_الرابط :_* ${v.url}
+↳ 🕒 *_الوقت :_* ${v.timestamp}
+↳ 📥 *_اصدر في :_* ${v.ago}
+↳ 👁 *_المشاهدات :_* ${v.views}`}}).filter(v => v).join('\n\n◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦◦\n\n')
   conn.sendFile(m.chat, tes[0].thumbnail, 'yts.jpeg', teks, m)
 }
-
-handler.help = ['ytsearch']
-handler.tags = ['dl']
-handler.command = ['ytsearch', 'yts','يوتيوب']
-
-export default handler
+handler.help = ['ytsearch *<texto>*'] 
+handler.tags = ['search']
+handler.command = ['بحث', 'يوتيوب'] 
