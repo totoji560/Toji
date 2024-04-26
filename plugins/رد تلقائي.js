@@ -6,7 +6,7 @@ let handler = m => m;
    let responses; 
    if (/^نيزوكو$/i.test(m.text)) { 
      responses = [ 
- '🫦✨'  
+ '*هــا؟!*'  
      ];
     
        }else if (/^اوامر$/i.test(m.text)) { 
