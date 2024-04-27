@@ -4,7 +4,6 @@ let handler = async (m, {conn, usedPrefix}) => {
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `*❖┃الــمــســـتـــخــدم لــيــس ف قــاعــدة الــبــيــانــات┃⁉️ ❯*`
     conn.reply(m.chat, `
-
 *❐═━━━═╊⊰🐉⊱╉═━━━═❐*
 *⌘┇مـحـفـظـة👛⇠ _@${who.split('@')[0]}_ ┇*
 
@@ -16,8 +15,6 @@ let handler = async (m, {conn, usedPrefix}) => {
 
 *⌘┇الــنــقـــود💰⇠ _${user.money}_ ┇*
 *❐═━━━═╊⊰🐉⊱╉═━━━═❐*
-
-
 `, m, { mentions: [who] })
 }
 handler.help = ['balance']
