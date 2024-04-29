@@ -17,7 +17,7 @@ ${i + 1}. ${conn.getName(jid) == undefined ? 'غير معروف' : conn.getName(
 }
 handler.help = ['listban']
 handler.tags = ['owner']
-handler.command = ['قايمه_البان', 'قايمةالبان']
+handler.command = ['قايمه_البان', 'المتبندين']
 
 handler.owner = true
 
