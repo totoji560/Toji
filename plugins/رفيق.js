@@ -6,7 +6,7 @@ let b
 do b = ps.getRandom()
 while (b === a)
 let user = m.sender;
-m.reply(`@${user.split('@')[0]}  💕توأمك روحي هو*  ${toM(b)}, 💓`, null, {
+m.reply(`@${user.split('@')[0]}*توأمك الـروحـي هو ☜* ${toM(b)},`, null, {
 mentions: [user, b]
 })}
 handler.help = ['formarpareja']
