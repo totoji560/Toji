@@ -14,14 +14,12 @@ let expp = Math.floor(Math.random() * 5000)
   global.db.data.users[m.sender].exp += expp
   
 let texto = `
-╔══💎═💵═💰══⬣
-║-----{راتب}-----
-║┈┈┈┈┈┈┈┈┈┈┈┈┈
-║➢ *${dia} الألماس* 💎
-║➢ *${tok} العملات* 🪙
-║➢ *${mystic} نيزوكو كوينز* 
-║➢ *${expp} اكسبي* 
-╚═════════════════⬣`
+*┃❐━═━═✦◈❨راتــــبــــك❩◈✦═━═━❐┃*
+*⏎┇${dia} الألـــمــ💎ــاس  ➪* 
+*⏎┇${tok} الـــعـــمـــ🪙ـــلات ➪*
+*⏎┇${mystic} نــــقــ💰ــود  ➪* 
+*⏎┇${expp} اكـــســبــ🌟ــي ➪* 
+*┃❐━═━═✦◈❨💸❩◈✦═━═━❐┃*`
 
 const fkontak = {
 	"key": {
@@ -44,7 +42,7 @@ global.db.data.users[m.sender].lastcofre = new Date * 1
 }
 handler.help = ['daily']
 handler.tags = ['xp']
-handler.command = ['راتب', 'cofre', 'abrircofre', 'cofreabrir'] 
+handler.command = ['راتب', 'cofre', 'راتبي', 'cofreabrir'] 
 handler.level = 5
 export default handler
 
@@ -62,4 +60,5 @@ function msToTime(duration) {
   seconds = (seconds < 10) ? "0" + seconds : seconds
 
   return hours + " Horas " + minutes + " Minutos"
-}
+	  }
+	
