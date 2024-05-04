@@ -7,9 +7,9 @@ const handler = async (m, {conn, command, args}) => {
     global.db.data.users[m.sender].exp -= xpperlimit * count;
     global.db.data.users[m.sender].limit += count;
     conn.reply(m.chat, `
-┌─「 الدفع 」
-⌯ الكيمة : + ${count}💎 
-⌯ الفلوس : -${xpperlimit * count} XP
+*❐『 شـــراء الـــمـــ💎ـاس 』*
+*⏎┇ الالـــمـــاس : + ${count}💎* 
+*⏎┇ الـــــدفـــــع :  ${xpperlimit * count} XP*
 └──────────────`, m);
   } else conn.reply(m.chat, `[❣️]~ اسف معكش خبرة عشان تشتري ${count} ماس 💎`, m);
 };
@@ -20,3 +20,6 @@ handler.command = ['شراء', 'شراءالكل'];
 handler.disabled = false;
 
 export default handler;
+
+
+
