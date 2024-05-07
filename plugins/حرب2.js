@@ -363,7 +363,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
 }
 handler.help = ['attack','atk']
 handler.tags = ['game']
-handler.command = /^(هجوم|اهجم)$/i
+handler.command = /^(يهجم|اهجم)$/i
 handler.group = true
 export default handler
 
