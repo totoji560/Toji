@@ -20,7 +20,7 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'demote')
-m.reply(`*تـــم الــأعــفـاء !*`)
+m.reply(`*〄┇تم الخفض لم تكن تستحقها┇➥*`)
 }
 
 }
