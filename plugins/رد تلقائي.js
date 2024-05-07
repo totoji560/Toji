@@ -13,20 +13,18 @@ let handler = m => m;
      responses = [ 
        '*لا تنسى النقطه*',  
      ];
-            
-            
-    
-    }else if (/^اكيرا$/i.test(m.text)) { 
+
+        }else if (/^استماره$/i.test(m.text)) { 
      responses = [ 
-       '*عمك*',  
+       '*اكتب.استماره*',  
      ];
-        }else if (/^المطور$/i.test(m.text)) { 
+    }else if (/^استمارة$/i.test(m.text)) { 
      responses = [ 
-       '*السيد اكيرا*',  
+       '*اكتب.استماره*',  
      ];
-        }else if (/^مطور$/i.test(m.text)) { 
+    }else if (/^.استمارة$/i.test(m.text)) { 
      responses = [ 
-       '*عمك اكيرا*',  
+       '*اكتب.استماره وليس .استمارة*',  
      ];
         }else if (/^.مطور$/i.test(m.text)) { 
      responses = [ 
