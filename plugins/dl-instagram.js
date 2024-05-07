@@ -29,6 +29,6 @@ break
 }} catch {
 await await m.reply(`*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾, 𝚂𝙸 𝙴𝙻 𝙴𝚁𝚁𝙾𝚁 𝚂𝙸𝙶𝚄𝙴, 𝙿𝚁𝚄𝙴𝙱𝙴 𝙲𝙾𝙽 𝙾𝚃𝚁𝙰 𝙾𝙿𝙲𝙸𝙾𝙽 (${usedPrefix}ig, ${usedPrefix}ig2, ${usedPrefix}ig3)*`)
 }}
-handler.command = /^(instagramdl|instagram|igdl|ig|instagramdl2|انستا|igdl2|انستجرام|instagramdl3|instagram3|igdl3|ig3)$/i
+handler.command = /^(instagramdl|instagram|igdl|ig|instagramdl2|انستا|igdl2|ig2|instagramdl3|instagram3|igdl3|ig3)$/i
 export default handler
   
