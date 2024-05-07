@@ -1,14 +1,34 @@
-import { googleImage } from '@bochilteam/scraper'
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `*[❗خطاء❗] مثال علي الامر ${usedPrefix + command} كانيكي*`
-if (m.text.includes('gore') || m.text.includes('cp')|| m.text.includes('porno')|| m.text.includes('Gore')|| m.text.includes('rule')|| m.text.includes('CP')|| m.text.includes('Rule34')) return m.reply('[❗خطاء❗] لا يمكنني إرسال هذا المحتوى ، المجموعة محظورة \n إذا كنت مشرفًا وتريد تنشيطها ، اخبر المطور')  
-const res = await googleImage(text)
-let image = await res.getRandom()
-let link = image
-conn.sendFile(m.chat, link, 'error.jpg', `🔎 *النتيجه ل:* ${text}\n🔗 *من* ${link}\n🌎 *محرك البحث:* جوجل`, m)}
-//let captionn = `🔎 *𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴:* ${text}\n🔗 *𝙻𝙸𝙽𝙺* ${link}\n🌎 *𝙱𝚄𝚂𝙲𝙰𝙳𝙾𝚁:* Google`
-//conn.sendButton(m.chat, captionn, author, link, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `#imagen ${text}`]], m)}
-handler.help = ['gimage <query>', 'imagen <query>']
-handler.tags = ['internet', 'tools']
-handler.command = /^(gimage|image|صوره|imagen)$/i
+import { googleIt } from  '@bochilteam/scraper' 
+import axios from  'axios'  
+let handler = async (m, { conn, command, args }) => {
+const fetch = (await import( 'node-fetch' )).default
+let text = args.join` `
+if (!text) return conn.reply(m.chat,  '*✠┇⳺ اكتب الذي تريد البحث عنه علي جوجل ⳻┇✠*  ', m)
+let url =  'https://google.com/search?q=  + encodeURIComponent(text)'
+let search = await googleIt(text)
+let msg = search.articles.map(({ title, url, description }) => { return `*${title}*\n_${url}_\n_${description}_` }).join( '\n\n' )
+try {
+let ss = await (await fetch(`https://image.thum.io/get/fullpage/${url}`)).buffer()
+await conn.sendFile(m.chat, ss,  error.png , url +  '\n\n'  + msg, m)
+} catch {
+m.reply(msg)
+}}
+handler.help = [ 'google' ,  'googlef' ].map(v => v + ' <pencarian> ')
+handler.tags = ['internet' ]
+handler.command = /^جوجلf?$/i
 export default handler
+
+/*let ss2 = await ssweb(url,  desktop )
+let dataa = ss2.result
+async function ssweb(url, device =  desktop ){
+return new Promise((resolve, reject) => {
+const base =  https://www.screenshotmachine.com 
+const param = { url: url, device: device, cacheLimit: 0 }
+axios({url: base +  /capture.php , method:  POST , data: new URLSearchParams(Object.entries(param)), headers: {  content-type :  application/x-www-form-urlencoded; charset=UTF-8  }}).then((data) => {
+const cookies = data.headers[ set-cookie ]
+if (data.data.status ==  success ) {
+axios.get(base +  /  + data.data.link, { headers: {  cookie : cookies.join(  ) }, responseType:  arraybuffer  }).then(({ data }) => {
+let result = { status: 200, author:  @BrunoSobrino , result: data } 
+resolve(result)})
+} else {
+reject({ status: 404, author:  Ryzn , message: data.data })}}).catch(reject)})}*/
