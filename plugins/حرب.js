@@ -177,7 +177,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
       for (let i=0;i<5;i++){
         if (conn.war[m.chat][i].user != ""){
           let user = conn.war[m.chat][i].user
-          return conn.reply(m.chat,`[⚡]⌯ بـــدات الــلــعــبــه بــنــجــاح\n⌯ @${user.split('@')[0]} لــمــهـــاجــمــه الـــعـــدو اســـتـــخــدم\n.حرب لاعب = لــمــعــرفــه احــصــائــيــات الــلــاعــب\n.هــجـــوم @مــنــشــن = لــمــهــاجــمــه الــعــدو`, m, {contextInfo: { mentionedJid: [user] }})
+          return conn.reply(m.chat,`[⚡]⌯ بـــدات الــلــعــبــه بــنــجــاح\n⌯ @${user.split('@')[0]} لــمــهـــاجــمــه الـــعـــدو اســـتـــخــدم\n.حرب لاعب = لــمــعــرفــه احــصــائــيــات الــلــاعــب\n.اهــــجـــــم @مــنــشــن = لــمــهــاجــمــه الــعــدو`, m, {contextInfo: { mentionedJid: [user] }})
         }
       }
     }else {
