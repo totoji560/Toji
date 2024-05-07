@@ -2,7 +2,7 @@ let handler = async (m, { conn, usedPrefix, args, command }) => {
   conn.war = conn.war ? conn.war : {}
   conn.war2 = conn.war2 ? conn.war2 : {}
 
-  if (!args[0] || args[0] == "شرح") return m.reply(`\t\t\t\t\t\t\t│〄  W A R - Z O N E 〄│
+  if (!args[0] || args[0] == "شرح") return m.reply(`\t\t\t\t\t\t\t│〄  𝑀𝐼𝑇𝑺𝑈𝑅𝐼 〄│
 
 [1] ويــــرزون لــعـــبــه حــرب بــهــجــوم الــادوار او الــهــجــوم بالــتــنـاوب
 [2] الــلــعــه مــمــكــن تــتــلــعــب بــنــظــام 1 ضــد 1 او 5 ضــد 5
