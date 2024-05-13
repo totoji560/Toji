@@ -48,7 +48,22 @@ let handler = m => m;
      responses = [ 
        '*ف هذا البوت اسمها التعدين*',  
      ];
-      
+        }else if (/^بحبك$/i.test(m.text)) { 
+     responses = [ 
+       '*حبك برص احول🦎*',  
+     ];
+        }else if (/^بنتي$/i.test(m.text)) { 
+     responses = [ 
+       '*انا بنت اكيرا*',  
+     ];
+          }else if (/^انا اكيرا$/i.test(m.text)) { 
+     responses = [ 
+       '*قول كلمة السر😑*',  
+     ];
+        }else if (/^جججج$/i.test(m.text)) { 
+     responses = [ 
+       '*ابوياااااااا اكيرا*',  
+     ];
    }
    if (responses) { 
      let randomIndex = Math.floor(Math.random() * responses.length); 
