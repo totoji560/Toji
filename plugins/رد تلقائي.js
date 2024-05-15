@@ -43,11 +43,14 @@ let handler = m => m;
      responses = [ 
        '*قول كلمة السر😑*',  
      ];
-        }else if (/^جججج$/i.test(m.text)) { 
+        }else if (/^كومندو$/i.test(m.text)) { 
      responses = [ 
-       '*ابوياااااااا اكيرا بحبك*',  
+       '*لو انت اكيرا بحبك لو حد تاني كل تبن*',  
      ];
-      
+          }else if (/^.مهام$/i.test(m.text)) { 
+     responses = [ 
+       '.المهام',  
+     ];
    }
    if (responses) { 
      let randomIndex = Math.floor(Math.random() * responses.length); 
