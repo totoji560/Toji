@@ -1,12 +1,11 @@
-let handler = async (m, { conn, isOwner, isAdmin, isROwner }) => {
-    if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
+let handler = async (m, { conn, isOwner }) => {
+    if (!isOwner) return // يمكنك استخدام dfail() لرسالة الخطأ هنا
     global.db.data.chats[m.chat].isBanned = false
     m.reply('✅ البوت نشط في هذه المجموعة')
-  }
-  
-  handler.help = ['unbanchat']
-  handler.tags = ['owner']
-  handler.command = ['شات', 'unchat']
-  
-  export default handler
-  
+}
+
+handler.help = ['unbanchat']
+handler.tags = ['owner']
+handler.command = ['unbanchat', 'شات']
+
+export default handler
