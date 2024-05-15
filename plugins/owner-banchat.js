@@ -1,7 +1,5 @@
-//import db from '../lib/database.js'
-
-let handler = async (m, { conn, isOwner, isAdmin, isROwner }) => {
-    if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
+let handler = async (m, { conn, isROwner }) => {
+    if (!isROwner) return // او يمكنك استخدام dfail() لرسالة الخطأ
     global.db.data.chats[m.chat].isBanned = true
     m.reply('✅ تم تعطيل البوت في هذه المجموعة')
 }
