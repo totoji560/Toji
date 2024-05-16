@@ -32,5 +32,5 @@ const handler = async (m, {conn, args}) => {
     }
   }
 };
-handler.command = /^ytmp3doc|ytadoc|ytmp3.2|yta.2$/i;
+handler.command = /^ytmp3doc|يوت|ytmp3.2|yta.2$/i;
 export default handler;
