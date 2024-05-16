@@ -17,5 +17,5 @@ ${text}
 };
 handler.help = ['pinterest <keyword>'];
 handler.tags = ['internet'];
-handler.command = /^(pinterest)$/i;
+handler.command = /^(بنترست)$/i;
 export default handler;
