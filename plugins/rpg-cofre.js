@@ -1,3 +1,4 @@
+const fs = require('fs');
 
 const handler = async (m, {isPrems, conn}) => {
   const datas = global
@@ -23,10 +24,10 @@ const handler = async (m, {isPrems, conn}) => {
 ${tradutor.texto2[0]}
 ${tradutor.texto2[1]}
 ${tradutor.texto2[2]}
-║➢ *${dia} ${tradutor.texto2[3]}
-║➢ *${tok} ${tradutor.texto2[4]}
-║➢ *${mystic} ${tradutor.texto2[5]}
-║➢ *${expp} ${tradutor.texto2[6]}
+*┇➢${dia} ${tradutor.texto2[3]}*
+*┇➢ ${tok} ${tradutor.texto2[4]}*
+*┇➢ ${mystic} ${tradutor.texto2[5]}*
+*┇➢ ${expp} ${tradutor.texto2[6]}*
 ${tradutor.texto2[7]}`;
 
   const fkontak = {
