@@ -50,7 +50,7 @@ ${tradutor.texto2[7]}`;
 };
 handler.help = ['daily'];
 handler.tags = ['xp'];
-handler.command = ['coffer', 'cofre', 'abrircofre', 'cofreabrir'];
+handler.command = ['coffer', 'cofre', 'صندوق', 'cofreabrir'];
 handler.level = 5;
 export default handler;
 
