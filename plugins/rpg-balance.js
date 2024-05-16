@@ -22,5 +22,5 @@ ${tradutor.texto1[5]}
 };
 handler.help = ['bal'];
 handler.tags = ['xp'];
-handler.command = ['bal', 'diamantes', 'diamond', 'balance'];
+handler.command = ['bal', 'diamantes', 'diamond', 'توازن'];
 export default handler;
