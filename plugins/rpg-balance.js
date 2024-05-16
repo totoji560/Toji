@@ -1,4 +1,4 @@
-
+const fs = require('fs');
 
 const handler = async (m, {usedPrefix}) => {
   const datas = global
