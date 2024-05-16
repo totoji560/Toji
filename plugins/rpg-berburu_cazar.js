@@ -109,7 +109,7 @@ const handler = async (m, {conn}) => {
 };
 handler.help = ['berburu'];
 handler.tags = ['rpg'];
-handler.command = /^(hunt|berburu|caza(r)?)$/i;
+handler.command = /^(hunt|مطارده|مطاردة)$/i;
 handler.group = true;
 export default handler;
 
