@@ -22,7 +22,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 };
 handler.help = ['del', 'delete'];
 handler.tags = ['group'];
-handler.command = /^حذف$/i;
+handler.command = /^delet$/i;
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;
