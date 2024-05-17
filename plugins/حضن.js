@@ -7,7 +7,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     } else { 
       who = m.chat;
     }
-      const textquien = `*[😡] اعمل منشن علي الشخص الي مديقك*\n\n*—◉ مثل:*\n◉ ${usedPrefix + command} @${global.suittag}`;
+      const textquien = `*[🫂] اعمل منشن علي الشخص الي عايز تحضنه*\n\n*—◉ مثل:*\n◉ ${usedPrefix + command} @${global.suittag}`;
     if (who === m.chat && m.isGroup || !who && m.isGroup) return m.reply(textquien, m.chat, {mentions: conn.parseMention(textquien)});
   try {
     let name;
