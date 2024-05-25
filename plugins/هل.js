@@ -17,7 +17,6 @@ let top = `*☜┇الــســؤال : ${text}*
 conn.sendFile (m.reply (top, null, { mentions: [a]}))}
 handler.help = handler.command = ['هل']
 handler.tags = ['fun']
-handler.group = true
 handler.limit = 0
 export default handler
 function pickRandom(list) {
