@@ -6,5 +6,5 @@ let stupidity = `*┃❐━═━═✦◈❨🔞❩◈✦═━═━❐┃*
 m.reply(stupidity, null, { mentions: conn.parseMention(stupidity) })}
 handler.help = ['stupidity']
 handler.tags = ['fun']
-handler.command = /^(انحرافي)$/i
+handler.command = /^(منحرف)$/i
 export default handler
