@@ -9,6 +9,5 @@ handler.command = ['banchat', 'بان_شات']
 
 handler.group = true
 handler.owner = true
-handler.admin = true
 
 export default handler
