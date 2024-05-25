@@ -1,7 +1,7 @@
 const rewards = {
-    exp: 15000,
-    money: 35999,
-    potion: 9,
+    exp: 50000,
+    money: 25000,
+    potion: 10,
 }
 
 const cooldown = 604800000
@@ -16,7 +16,7 @@ let handler = async (m) => {
     }
     //conn.sendButton(m.chat,'*––––––『 WEEKLY 』––––––*', text.trim(), null, [['Profile', ''], ['weekly', '.weekly']],m)
     m.reply(`
-    🎁 *weekly reward*
+    *_____『 WEEKLY 』_____*
     
     ▢ *Has received:*
      ${text}`)
