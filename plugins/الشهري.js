@@ -1,9 +1,9 @@
 const rewards = {
-    exp: 50000,
-    money: 49999,
-    potion: 10,
-    mythic: 3,
-    legendary: 1
+    exp: 200000,
+    money: 50000,
+    potion: 20,
+    mythic: 5,
+    legendary: 3,
 }
 
 const cooldown = 2592000000
@@ -17,7 +17,7 @@ let handler = async (m) => {
     }
     //conn.sendButton(m.chat,'*––––––『 MONTHLY 』––––––*', text.trim(), null, [['Inventory', '.inv'], ['Menu', '.menu']],m)
     m.reply(`
-    🎁 *monthly reward*
+    *______『 MONTHLY 』______*
     
     ▢ *Has received:*
      ${text}`)
