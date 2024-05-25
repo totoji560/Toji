@@ -1,4 +1,4 @@
-let ro = 3000
+let ro = 10000
 let handler = async (m, { conn, usedPrefix, command}) => {
 let time = global.db.data.users[m.sender].lastrob + 7200000
 if (new Date - global.db.data.users[m.sender].lastrob < 7200000) throw `*〄┇انـتـظـر${msToTime(time - new Date())} لـكـي تـهـجـم┇➥*`
