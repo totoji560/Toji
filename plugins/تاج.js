@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-conn.reply(m.chat,`——————–—\n\n————————“${pickRandom(global.verdaad)}“——————–—\n\n——————–—`, m)
+conn.reply(m.chat,`—————\n\n——————“${pickRandom(global.verdaad)}“—————\n\n————`, m)
 }
 handler.help = ['تاج']
 handler.tags = ['fun']
@@ -13,7 +13,7 @@ global.verdaad = [
 "اول منشن عمك", 
 "اول منشن يحبك", 
 "ثاني منشن حمار", 
-" ثالث منشن يحب كانيكي اكثر منك", 
+" ثالث منشن شاذ", 
 "خامس منشن اوتاكو ورع", 
 "ثالث منشن خايس", 
 "ثاني منشن انت عمه", 
