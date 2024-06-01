@@ -12,7 +12,7 @@ m.reply(`*〄┇لــقــد ذهــب الــي الــجـــحـ🔥ـ�
 
 handler.help = ['kick @user']
 handler.tags = ['group']
-handler.command = ['برا', 'طرد'] 
+handler.command = ['خد', 'طرد'] 
 handler.admin = true
 handler.group = true
 handler.botAdmin = true
