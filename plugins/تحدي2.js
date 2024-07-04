@@ -21,12 +21,12 @@ handler.before = async function(m) {
       const comienzop = `*اختار قبل الاعب الاخر*  
 حجر
 ورقه
-مقص\nالنقاط +${room.poin}𝚇𝙿\nلفل ${room.poin_lose}𝚇𝙿\n*𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇*
+مقص\nالنقاط +${room.poin}𝚇𝙿\nلفل ${room.poin_lose}𝚇𝙿\n**⧠━──━⧈⇓《🌸》⇓⧈━──━⧠**
 `;
       const comienzop2 = `*اختار قبل الاعب الاخر*
 حجر
 ورقه
-مقص\nالنقاط +${room.poin}𝚇𝙿\nلفل ${room.poin_lose}𝚇𝙿\n*𝑁𝐸𝑍𝑈𝐾𝛩–𝐵𝛩𝑇*`;
+مقص\nالنقاط +${room.poin}𝚇𝙿\nلفل ${room.poin_lose}𝚇𝙿\n**⧠━──━⧈⇓《𝑀𝐼𝑇𝑺𝑈𝑅𝐼》⇓⧈━──━⧠**`;
 
       if (!room.pilih) this.sendMessage(room.p, {text: comienzop}, {quoted: m});
       if (!room.pilih2) this.sendMessage(room.p2, {text: comienzop2}, {quoted: m});
