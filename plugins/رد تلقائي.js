@@ -13,6 +13,10 @@ let handler = m => m;
      responses = [ 
        '*لا تنسى النقطه*',  
      ];
+    }else if (/^بوت$/i.test(m.text)) { 
+     responses = [ 
+       '*شــوفــلــك كــلـــبــه*',  
+     ];
 
         }else if (/^استماره$/i.test(m.text)) { 
      responses = [ 
