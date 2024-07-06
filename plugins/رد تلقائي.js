@@ -43,6 +43,10 @@ let handler = m => m;
      responses = [ 
        '*انا بنت اكيرا*',  
      ];
+        }else if (/^منور$/i.test(m.text)) { 
+     responses = [ 
+       '*بــــنــــوري*',  
+     ];
         
           }else if (/^.مهام$/i.test(m.text)) { 
      responses = [ 
