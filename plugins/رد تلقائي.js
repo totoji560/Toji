@@ -8,6 +8,10 @@ let handler = m => m;
      responses = [ 
  '*هــا؟!*'  
      ];
+        }else if (/^سلام عليكم$/i.test(m.text)) { 
+     responses = [ 
+       '*وعليكم السلام*',  
+     ];
         }else if (/^احا$/i.test(m.text)) { 
      responses = [ 
        '*شلحها🐦*',  
