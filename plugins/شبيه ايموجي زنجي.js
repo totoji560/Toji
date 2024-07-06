@@ -1,13 +1,13 @@
 import fs from 'fs';
 
-let timeout = 60000;
-let poin = 500;
+let timeout = 30000;
+let poin = 750;
 
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tekateki = conn.tekateki ? conn.tekateki : {};
     let id = m.chat;
     if (id in conn.tekateki) {
-        conn.reply(m.chat, '❐┃لم يتم الاجابة علي السؤال بعد┃❌ ❯', conn.tekateki[id][0]);
+        conn.reply(m.chat, '*⌫┇لـم يـتـم الاجـابـة عـلـي الـسـؤال بـعـد┇ 🔝 ┇➥*', conn.tekateki[id][0]);
         throw false;
     }
     let tekateki = JSON.parse(fs.readFileSync(`./src/game/شبيه.json`));
