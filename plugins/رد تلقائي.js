@@ -12,6 +12,10 @@ let handler = m => m;
      responses = [ 
        '*وعليكم السلام*',  
      ];
+        }else if (/^هلا$/i.test(m.text)) { 
+     responses = [ 
+       '*هلا*',  
+     ];
         }else if (/^احا$/i.test(m.text)) { 
      responses = [ 
        '*شلحها🐦*',  
