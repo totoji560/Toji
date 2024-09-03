@@ -15,6 +15,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let math = max - xp
     let prem = global.prems.includes(who.split`@`[0])
     let sn = createHash('md5').update(who).digest('hex')
+    let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
     let str = `
 ┌───「 *PROFILE* 」
@@ -27,7 +28,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 ▢ *🏆الدور:* ${role}
 ▢ *📇 مسجل :* ${registered ? 'نعم': 'لا'}
 └──────────────`
-    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
+    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] }, { quoted: fkontak } )
     m.react(done)
 }
 handler.help = ['perfil']
