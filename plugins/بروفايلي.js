@@ -28,7 +28,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 ▢ *🏆الدور:* ${role}
 ▢ *📇 مسجل :* ${registered ? 'نعم': 'لا'}
 └──────────────`
-    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] }, { quoted: fkontak } )
+    conn.sendFile(m.chat, str, m, false, { mentions: [who] }, { quoted: fkontak } )
     m.react(done)
 }
 handler.help = ['perfil']
