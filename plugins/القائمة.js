@@ -59,28 +59,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 {
                             header: 'اوامر تريمكس لسحب الارقام واتساب',
                             title: '',
-                            description: 'سـحب واتس من كرولو
-
-1-pkg update && pkg upgrade
-
-2-pkg install python
-
-3-pkg install python2
-
-4-pkg install git
-
-5-git clone https://github.com/Bl4ckDr460n/HxWhatsApp
-
-6-cd HxWhatsApp
-
-7-ls
-
-8-python2 HxWhatsApp.py
-
-
-وبكده هتحط رقمه وهيجيلك الكود
-
-حقوق JENNY RIODAN🕷🕸',
+                            description: 'سـحب واتس من كرولو\n\n1-pkg update && pkg upgrade\n\n2-pkg install python\n\n3-pkg install python2\n\n4-pkg install git\n\n5-git clone https://github.com/Bl4ckDr460n/HxWhatsApp\n\n6-cd HxWhatsApp\n\n7-ls\n\n8-python2 HxWhatsApp.py\n\n\nوبكده هتحط رقمه وهيجيلك الكود\n\nحقوق JENNY RIODAN🕷🕸',
                             id: 'te'
                           },
 {
