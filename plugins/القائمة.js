@@ -71,27 +71,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 {
                             header: 'فك طعن',
                             title: '',
-                            description: 'الجميل 
-
-support@support.whatsapp.com
-
-
-الموضوع 
-
-Saya membutuhkan kelompok pendukung
-
-
-
-الكود 
-
-Banyak orang anonim yang mengirimi saya gambar dan kode akun saya dan menggunakan salinan terbalik untuk mengirim pesan dan laporan dan saya tidak tahu apa-apa tentang itu dan tolong buka blokir nomor saya sehingga saya dapat berkomunikasi dengan keluarga, teman, dan pekerjaan saya. Tolong bantu dia sesegera mungkin. Harap verifikasi ulang akun saya lagi dan periksa akun saya karena pemblokiran karena saya bekerja dengan akun pemblokiran ini. Cabut larangan tersebut dan kita semua berdoa. Dukungan resmi WhatsApp Business. Mereka ingin saya menonaktifkan WhatsApp Business dan saya tidak tahu alasannya. Terima kasih atas dukungan WhatsApp Business yang luar biasa, ini adalah akun saya yang diblokir. Lepaskan kunci (967+)',
+                            description: 'الجميل \n\nsupport@support.whatsapp.com\n\n\nالموضوع \n\nSaya membutuhkan kelompok pendukung\n\n\n\nالكود \n\nBanyak orang anonim yang mengirimi saya gambar dan kode akun saya dan menggunakan salinan terbalik untuk mengirim pesan dan laporan dan saya tidak tahu apa-apa tentang itu dan tolong buka blokir nomor saya sehingga saya dapat berkomunikasi dengan keluarga, teman, dan pekerjaan saya. Tolong bantu dia sesegera mungkin. Harap verifikasi ulang akun saya lagi dan periksa akun saya karena pemblokiran karena saya bekerja dengan akun pemblokiran ini. Cabut larangan tersebut dan kita semua berdoa. Dukungan resmi WhatsApp Business. Mereka ingin saya menonaktifkan WhatsApp Business dan saya tidak tahu alasannya. Terima kasih atas dukungan WhatsApp Business yang luar biasa, ini adalah akun saya yang diblokir. Lepaskan kunci (967+)',
                             id: 'te'
                           },
 {
                             header: 'فك اباحي مشدد',
                             title: '',
                             description: 'كود فك مشدد
-اباحي 
+\nاباحي 
 
 بص بقا الطريقة بقا ركز معايا يا حبيب قلبي تبعت الكود دا من جميلين من غير رقمك و تعلق الرد ساعتين ... بعد الساعتين هتروح ترد ع الجملين برقمك و من جيميل تالت تبعت الكود من واتساب اعمال و أهم حاجه غير لغه الكود ل (انجليزي )
 
