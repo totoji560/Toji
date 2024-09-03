@@ -13,10 +13,10 @@ ${oi}
 ${listAdmin}
 
 *[ ⚠ ️] هذا الامر للحالات الطارئه فقط!!*`.trim()
-conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
+conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] } , { quoted: fkontak })
 }
 handler.help = ['admins <texto>']
 handler.tags = ['group']
-handler.command = /^(admins|مشرفين|الادمنز|المشرفين|الادمن)$/i
+handler.command = /^(admins|مشرفين|ادمن|المشرفين|الادمن)$/i
 handler.group = true
 export default handler
