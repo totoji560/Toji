@@ -13,6 +13,8 @@ let wib = moment.tz('Egypt').format('HH:mm:ss')
 let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
     let d = new Date(new Date + 3600000)
     let locale = 'ar'
+    let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+    
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
     let _uptime = process.uptime() * 1000
@@ -37,52 +39,15 @@ let readMore = more.repeat(900)
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
-*•┃❖اهلا بك في قسم الترفيــ🌸هه*
+*•┃❖اهلا بك في قسم فـك الـبــان*
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
-*⏎┇🌸⃝•┇【.الـمــطـور 】➥*
-*⏎┇🌸⃝•┇【.تــــــــوب 】➥*
-*⏎┇🌸⃝•┇【.الشخصيه】➥*
-*⏎┇🌸⃝•┇【.لــــــــــــو 】➥*
-*⏎┇🌸⃝•┇【.ذكـــــــــاء】➥*
-*⏎┇🌸⃝•┇【.غــــبــــاء 】➥*
-*⏎┇🌸⃝•┇【.حــكــمــه 】➥*
-*⏎┇🌸⃝•┇【.جــمــيــل 】➥*
-*⏎┇🌸⃝•┇【.طــــــلاق 】➥*
-*⏎┇🌸⃝•┇【.تــطقـيـم 】➥*
-*⏎┇🌸⃝•┇【.طــقــــم2】➥*
-*⏎┇🌸⃝•┇【.طــقــمـي 】➥*
-*⏎┇🌸⃝•┇【.خــــروف 】➥*
-*⏎┇🌸⃝•┇【.تـــــــــاج 】➥*
-*⏎┇🌸⃝•┇【.هـــــــــــل】➥*
-*⏎┇🌸⃝•┇【.صـراحــه 】➥*
-*⏎┇🌸⃝•┇【.تـــكــــرار 】➥*
-*⏎┇🌸⃝•┇【.حــــروف 】➥*
-*⏎┇🌸⃝•┇【.تـصـمـيـم 】➥*
-*⏎┇🌸⃝•┇【.ايــديـــت 】➥*
-*⏎┇🌸⃝•┇【.خــــــــط 】➥*
-*⏎┇🌸⃝•┇【.مـــيــمـــز 】➥*
-*⏎┇🌸⃝•┇【.زخــــرفـه 】➥*
-*⏎┇🌸⃝•┇【.قــــلـــــب 】➥*
-*⏎┇🌸⃝•┇【.انــحـراف 】➥*
-*⏎┇🌸⃝•┇【.منحرف  】➥*
-*⏎┇🌸⃝•┇【.كــــــذاب 】➥*
-*⏎┇🌸⃝•┇【.مـــراتـــي 】➥*
-*⏎┇🌸⃝•┇【.اخــتــفـاء 】➥*
-*⏎┇🌸⃝•┇【.رفــــيــــق 】➥*
-*⏎┇🌸⃝•┇【.زوجـــنــي 】➥*
-*⏎┇🌸⃝•┇【.صــــفـــــع 】➥*
-*⏎┇🌸⃝•┇【.رومــنــســي】➥*
-*⏎┇🌸⃝•┇【.خــــيـــانــــه】➥*
-*⏎┇🌸⃝•┇【.خـــلـــفــيـــه】➥*
-*⏎┇🌸⃝•┇【.حــــــضــــــن】➥*
-*⏎┇🌸⃝•┇【.اغـــــنــــيــــه】➥*
-*⏎┇🌸⃝•┇【.تـــعـــلـــيـــق】➥*
-*⏎┇🌸⃝•┇【.تـــــنــــــمــــر】➥*
-*⏎┇🌸⃝•┇【.زواج 】➥*
-*⏎┇🌸⃝•┇【.ورع 】➥*
+*⏎┇🌸⃝•┇【.انتهاك_مشدد 】➥*
+*⏎┇🌸⃝•┇【.اباحي_مشدد】➥*
+*⏎┇🌸⃝•┇【.طـعــن 】➥*
+*⏎┇🌸⃝•┇【.اســبــام】➥*
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
 *☜┇حقـوق السيد اكيرا ┇〄* 
-*☞┇ wa.me/201559321760*
+*☞┇ wa.me/201020639057*
 *☞┋𝑇𝐸𝑁𝐷𝛩𝑈, 𝐴𝐾𝐼𝑅𝐴  〖🐉〗*
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
 ‬`.trim();
@@ -91,7 +56,7 @@ conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
   gifPlayback: true,gifAttribution: 0
-    }, { quoted: m });
+    }, { quoted: fkontak });
 }; 
 handler.help = ['main']
 handler.tags = ['group']
