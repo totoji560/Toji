@@ -4,9 +4,9 @@ let handler = m => m;
 
    let chat = global.db.data.chats[m.chat]; 
    let responses; 
-   if (/^ميتسوري$/i.test(m.text)) { 
+   if (/^توجي$/i.test(m.text)) { 
      responses = [ 
- '*هــا؟!*'  
+ '*ماذا ي احمق🗿*'  
      ];
         }else if (/^سلام عليكم$/i.test(m.text)) { 
      responses = [ 
@@ -29,18 +29,7 @@ let handler = m => m;
        '*شــوفــلــك كــلـــبــه*',  
      ];
 
-        }else if (/^استماره$/i.test(m.text)) { 
-     responses = [ 
-       '*اكتب.استماره*',  
-     ];
-    }else if (/^استمارة$/i.test(m.text)) { 
-     responses = [ 
-       '*اكتب.استماره*',  
-     ];
-    }else if (/^.استمارة$/i.test(m.text)) { 
-     responses = [ 
-       '*اكتب.استماره وليس .استمارة*',  
-     ];
+
         }else if (/^.مطور$/i.test(m.text)) { 
      responses = [ 
        '*حط ال*',  
