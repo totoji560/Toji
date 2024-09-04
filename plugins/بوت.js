@@ -13,14 +13,16 @@ let wib = moment.tz('Egypt').format('HH:mm:ss')
 let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
     let d = new Date(new Date + 3600000)
     let locale = 'ar'
+    let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+    
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-    await conn.sendMessage(m.chat, { react: { text: '🌸', key: m.key } })
-let videoUrl = 'https://telegra.ph/file/3fd883bd07a928da99374.mp4';
+    await conn.sendMessage(m.chat, { react: { text: '🛠️', key: m.key } })
+let videoUrl = 'https://telegra.ph/file/11478e96c27d48d6d04a9.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
   const {money, joincount} = global.db.data.users[m.sender];
@@ -36,24 +38,22 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
-*⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
-*⧉┇اهلا بك ف بوت مـيـتـســ🌸ـوري┇➥*
-
-*❐↞┇اذا كان امر لا يعمل ابلغ المطور عن طريق امر .بلاغ ┇➥*
-
- *❐↞┇لاستخدام امر الشات GPT استخدم امر  .دحيح ┇➥*
-*❂ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*
-*⏎┇ لعرض الاوامر ↞.اوامر  ➪*
-*⏎┇ لعرض المهام  ↞ .المهام ➪*
-*❂ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*
-*⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
+‏══════════════════════
+*╭─────────╯•╰─────────╮*
+> *⧉┇اهلا بك ف بوت تـــــوجـــ⚔️ــي┇➥*
+—————‏—————‏—————‏———‏—‏—
+> *⏎┇ لعرض الاوامر ↞.اوامر  ➪*
+> *⏎┇ لعرض المهام  ↞ .المهام ➪*
+—————‏—————‏—————‏———‏—‏—
+*╰─────────╮•╭─────────╯*
+‏══════════════════════
 ‬`.trim();
 
 conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
   gifPlayback: true,gifAttribution: 0
-    }, { quoted: m });
+    }, { quoted: fkontak });
 }; 
 handler.help = ['main']
 handler.tags = ['group']
