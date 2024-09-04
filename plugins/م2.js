@@ -21,7 +21,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-    await conn.sendMessage(m.chat, { react: { text: '👾', key: m.key } })
+    await conn.sendMessage(m.chat, { react: { text: '⚒️', key: m.key } })
 let videoUrl = 'https://telegra.ph/file/bcb4c820706d0073d10e2.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
@@ -38,16 +38,16 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
-*⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
+*⧠━──━⧈⇓《🛠️》⇓⧈━──━⧠*
 *⧉┇اهلا بك في قسم الـتـبـنـيـد*
-*⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
-*⏎┇🌸⃝•┇【.بان_فنش 】➥*
-*⏎┇🌸⃝•┇【.باند_عكس 】➥*
-*⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
+*⧠━──━⧈⇓《🛠️》⇓⧈━──━⧠*
+*⏎┇🛠️⃝•┇【.بان_فنش 】➥*
+*⏎┇🛠️⃝•┇【.باند_عكس 】➥*
+*⧠━──━⧈⇓《🛠️》⇓⧈━──━⧠*
 *☜┇حقـوق السيد اكيرا ┇〄* 
 *☞┇⌬ wa.me/201020639057*
-*☞┋𝑇𝐸𝑁𝐷𝛩𝑈, 𝐴𝐾𝐼𝑅𝐴⁵〖👾〗*
-*⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
+*☞┋𝑇𝐸𝑁𝐷𝛩𝑈, 𝐴𝐾𝐼𝑅𝐴⁵〖🚫〗*
+*⧠━──━⧈⇓《🛠️》⇓⧈━──━⧠*
 ‬`.trim();
 
 conn.sendMessage(m.chat, {
