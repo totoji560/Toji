@@ -24,6 +24,23 @@ let handler = m => m;
      responses = [ 
        '*لا تنسى النقطه*',  
      ];
+
+    }else if (/^كسمك$/i.test(m.text)) { 
+     responses = [ 
+       '*اهينك انا*',  
+     ];
+    }else if (/^عرص$/i.test(m.text)) { 
+     responses = [ 
+       '*مص ي خول*',  
+     ];
+    }else if (/^مص$/i.test(m.text)) { 
+     responses = [ 
+       '*انيكك انا*',  
+     ];
+    }else if (/^لا$/i.test(m.text)) { 
+     responses = [ 
+       '*م بمزاجك*',  
+     ];
     }else if (/^بوت$/i.test(m.text)) { 
      responses = [ 
        '*شــوفــلــك كــلـــبــه*',  
