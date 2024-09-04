@@ -12,6 +12,8 @@ let wib = moment.tz('Egypt').format('HH:mm:ss')
 
 let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
     let d = new Date(new Date + 3600000)
+    let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+    
     let locale = 'ar'
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
@@ -42,11 +44,10 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
 *اهلا بك في قائمه المهام 𝑀𝐼𝑇𝑺𝑈𝑅𝐼*
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠* 
 *⏎┇🌸⃝•┇.م1《فـك بـان》*
-*⏎┇🌸⃝•┇.م3《تــبــنــيد》*
-*⏎┇🌸⃝•┇.م4《سـحـب ارقـام》*
-*⏎┇🌸⃝•┇.م5《اوامر تريمكس》*
-*⏎┇🌸⃝•┇.م6《الــــبـــنـــك》*
-*⏎┇🌸⃝•┇.م7《الـــمــطــور》*
+*⏎┇🌸⃝•┇.م2《تــبــنــيد》*
+*⏎┇🌸⃝•┇.م3《سـحـب ارقـام》*
+*⏎┇🌸⃝•┇.م4《اوامر تريمكس》*
+*⏎┇🌸⃝•┇.م5《تـعـلـيـم》*
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
 *⧉┇للتوضيح ☟*
 *☜┇استخدم الارقام لعرض الاوامر ➥*
@@ -61,7 +62,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
         mentions: [m.sender,global.conn.user.jid],
         gifPlayback: true,
         gifAttribution: 0
-    }, { quoted: m });
+    }, { quoted: fkontak });
 }; 
 
 handler.help = ['main']
