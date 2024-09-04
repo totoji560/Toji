@@ -12,6 +12,8 @@ let wib = moment.tz('Egypt').format('HH:mm:ss')
 
 let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
     let d = new Date(new Date + 3600000)
+    let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+    
     let locale = 'ar'
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
@@ -37,18 +39,9 @@ let readMore = more.repeat(900)
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
-*⧉┇اهلا بك في قسم البنـ💸ـك*
+*⧉┇اهلا بك في قسم التعليم*
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
-*⏎┇🌸⃝•┇【.يـــومــي】➥*
-*⏎┇🌸⃝•┇【.رانــــــك】➥*
-*⏎┇🌸⃝•┇【.راتــــــب】➥*
-*⏎┇🌸⃝•┇【.لــــفــــل】➥*
-*⏎┇🌸⃝•┇【.هــجــوم】➥*
-*⏎┇🌸⃝•┇【.شـــــراء】➥*
-*⏎┇🌸⃝•┇【.شــهــري】➥*
-*⏎┇🌸⃝•┇【.اسبوعي】➥*
-*⏎┇🌸⃝•┇【.بـــنــــك】➥*
-*⏎┇🌸⃝•┇【.عـــمـــل】➥*
+*⏎┇🌸⃝•┇【.تبنيد_ارهابي】➥*
 *⧠━──━⧈⇓《🌸》⇓⧈━──━⧠*
 *☜┇ حقـوق السيد اكيرا ┇〄* 
 *☞┇wa.me/201559321760*
@@ -60,7 +53,7 @@ conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
   gifPlayback: true,gifAttribution: 0
-    }, { quoted: m });
+    }, { quoted: fkontak });
 }; 
 handler.help = ['main']
 handler.tags = ['group']
