@@ -13,6 +13,8 @@ let wib = moment.tz('Egypt').format('HH:mm:ss')
 let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
     let d = new Date(new Date + 3600000)
     let locale = 'ar'
+    let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+    
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
     let _uptime = process.uptime() * 1000
@@ -40,11 +42,8 @@ let str = `
 *❐『اهــلا اسمي ميستوري』*
 *❖〖لعرض الاوامر استخدم امر  ⏎ .اوامر〗❖*
 *❖〖لعرض المهام استخدم امر  ⏎ .المهام〗❖*
-
-*⏎┇لعرض جميع الاوامر استخدم امر ☜ .كل*
 *┃❐━═━═✦◈❨🌸❩◈✦═━═━❐┃*
 *〄┇حـقـوق الـسـيـد اكـيـرا*┇➥
-*➥┇https://wa.me/201559321760*
 *➥┇https://wa.me/201020639057*
 *┃❐━═━═✦◈❨🌸❩◈✦═━═━❐┃*
 ‬`.trim();
@@ -53,7 +52,7 @@ conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
   gifPlayback: true,gifAttribution: 0
-    }, { quoted: m });
+    }, { quoted: fkontak});
 }; 
 handler.help = ['main']
 handler.tags = ['group']
