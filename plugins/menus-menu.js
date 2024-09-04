@@ -25,7 +25,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
     // إضافة الأمر الجديد هنا
     await conn.sendMessage(m.chat, { react: { text: '☑️', key: m.key } })
 
-    let videoUrl = 'https://telegra.ph/file/a8a9fb3e2dd7c6fe5fa8d.mp4';
+    let videoUrl = 'https://telegra.ph/file/72f543dd017c2040bf36f.mp4';
     let vn = './media/menu.mp3';
     const user = global.db.data.users[m.sender];
     const {money, joincount} = global.db.data.users[m.sender];
@@ -50,7 +50,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
 *⏎┇🛠️⃝•┇【.طـعــن 】➥*
 *⏎┇🛠️⃝•┇【.اســبــام】➥*
 *⏎┇🛠️⃝•┇【.تخمين】➥*
-*⏎┇🛠️⃝•┇م5《تـعـلـيـم》*
+*⏎┇🛠️⃝•┇【.سحب】➥*
 *⧠━──━⧈⇓《🛠️》⇓⧈━──━⧠*
 *⧉┇للتوضيح ☟*
 *☜┇استخدم الارقام لعرض الاوامر ➥*
